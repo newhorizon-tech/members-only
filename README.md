@@ -44,7 +44,7 @@ To get this project up and running locally, you must have installed, ruby, rails
 👤 **Tendai Nyandoro**
 
 - GitHub: [@Tendai Nyandoro](https://github.com/tnyandoro)
-- Twitter: [@Tendai62518821](https://twitter.com/tendai28)
+- Twitter: [@Tendai](https://twitter.com/Tendai62518821)
 - LinkedIn: [Tendai Nyandoro](https://www.linkedin.com/in/tendai-nyandoro/)
 
 ## Acknowledgements
