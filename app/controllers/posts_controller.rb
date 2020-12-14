@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
   def new
-    @post = current_user.posts.new
+    if user_signed_in?
+     @post = current_user.posts.new
+    else
+     flash.alert ="Please log in to create a new post"
+     redirect_to new_user_session_path
+    end
   end
 
   def create
@@ -13,7 +18,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = current_user.posts.find(params[:id])
+    @post = Post.find(params[:id])
   end
 
   private
