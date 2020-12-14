@@ -3,4 +3,20 @@
 <ul>
   <li> <%= link_to 'Sign In', new_user_session_path %> </li>
   <li> <%= link_to 'Sign Up', new_user_registration_path %> </li>
+  <li><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></li><br/>
+  <li> <%= link_to 'New Post', new_post_path %> </li><br/>
+  <hr>
+   <% (Post.all).each do |p| %>
+   <div class="post card m-2">
+   <h3 class="post-title">
+     <%=p.title %>
+   </h3>
+    <p class="post-body">
+     <%=p.body%>
+    </p>
+   </div>
+   <% end %>
+
+
+
 </ul>
