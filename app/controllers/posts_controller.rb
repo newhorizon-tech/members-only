@@ -1,11 +1,8 @@
 class PostsController < ApplicationController
+  before_action :require_sign_in
+
   def new
-    if user_signed_in?
       @post = current_user.posts.new
-    else
-      flash.alert = 'Please log in to create a new post'
-      redirect_to new_user_session_path
-    end
   end
 
   def create
@@ -22,6 +19,13 @@ class PostsController < ApplicationController
   end
 
   private
+
+  def require_sign_in
+    unless user_signed_in?     
+      flash.alert = 'Please log in to create a new post'
+      redirect_to new_user_session_path
+    end
+  end
 
   def post_params
     params.require(:post).permit(:title, :body)
