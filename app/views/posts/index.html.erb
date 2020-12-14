@@ -14,6 +14,12 @@
     <p class="post-body">
      <%=p.body%>
     </p>
+    <h4>
+     <% if user_signed_in? %>
+     Author of the post -
+     <%= User.find(p.user_id).username %>
+     <% end %>
+    </h4>
    </div>
    <% end %>
 
