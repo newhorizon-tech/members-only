@@ -1,0 +1,16 @@
+   <% (Post.all).each do |p| %>
+   <div class="post container">
+   <h3 class="post-title">
+     <%=p.title %>
+   </h3>
+    <p class="post-body">
+     <%=p.body%>
+    </p>
+    <h6>
+     <% if user_signed_in? %>
+     Member who made this poost -
+     <%= User.find(p.user_id).username %>
+     <% end %>
+    </h6>
+   </div>
+   <% end %>
