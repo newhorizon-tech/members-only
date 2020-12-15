@@ -1,24 +1,63 @@
-# README
+# MembersOnly (Authentication project)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is a mini-project using authentication that allows you to sign up, create posts. You can see the author of the post if you're a "member" but not if you're signed out
 
-Things you may want to cover:
 
-* Ruby version
+## Built With
 
-* System dependencies
+- Ruby
+- Ruby on Rails
+- SQLite
+- Atom
+- VS Code
 
-* Configuration
+### Getting Started
 
-* Database creation
+### Prerequisites
 
-* Database initialization
+To get this project up and running locally, you must have installed, ruby, rails and the necessary gems.
 
-* How to run the test suite
+**To get this project set up on your local machine, follow these simple steps:**
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Open Terminal.
+2. Navigate to your desired location to download the contents of this repository.
+3. Clone this repository: git clone https://github.com/newhorizon-tech/members-only
+4. Run ```cd members-only```.
+5. Run ```bundle install``` to get the necesary gems.
+6. Run `rails db:migrate`.
 
-* Deployment instructions
+## Use
 
-* ...
+- Navigate to the root directory of the project
+- Run `rails server`
+- Open a browser and visit `127.0.0.1:3000`
+- Sign up and create posts!
+
+
+## Authors
+
+👤 **Alaukik**
+
+- Github: [@newhorizon-tech](https://github.com/newhorizon-tech)
+- Twitter: [@techintosh3](https://twitter.com/techintosh3)
+
+👤 **Tendai Nyandoro**
+
+- GitHub: [@Tendai Nyandoro](https://github.com/tnyandoro)
+- Twitter: [@Tendai](https://twitter.com/Tendai62518821)
+- LinkedIn: [Tendai Nyandoro](https://www.linkedin.com/in/tendai-nyandoro/)
+
+## Acknowledgements
+
+- Odin Projects
+- Official Rails Guide https://guides.rubyonrails.org/
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/newhorizon-tech/members-only/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!

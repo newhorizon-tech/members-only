@@ -1,0 +1,8 @@
+<div class="form container">
+<h1>Create Post</h1>
+<%= simple_form_for @post do |f| %>
+  <%= f.input :title %>
+  <%= f.input :body, as: :text %>
+  <%= f.button :submit, label: "Create Post!", class: "btn btn-primary" %>
+<% end %>
+</div>
